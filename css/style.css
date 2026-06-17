@@ -1011,6 +1011,58 @@ html.with-fancybox body.hide-scrollbar {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
+.header .actions-select-wrap .user-wrap {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-right: 10px;
+  width: 240px;
+}
+.header .actions-select-wrap .user-wrap .btn {
+  height: 24px;
+  line-height: 24px;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  color: var(--clr-base);
+}
+.header .actions-select-wrap .user-wrap .btn .button-title {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 24px - 8px);
+}
+.header .actions-select-wrap .user-wrap .btn:hover {
+  color: var(--clr-att);
+}
+.header .actions-select-wrap .user-wrap .btn .elm-photo {
+  aspect-ratio: 1;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.header .actions-select-wrap .buttons-wrap {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
+}
+.header .actions-select-wrap .buttons-wrap .btn-action-ico {
+  width: 24px;
+  height: 24px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
 .header .actions-select-wrap .btn {
   gap: 8px;
   padding: 0 4px;
@@ -1342,6 +1394,30 @@ html.with-fancybox body.hide-scrollbar {
     gap: 0;
     position: relative;
     z-index: 10;
+  }
+  .header .actions-select-wrap .user-wrap {
+    width: auto;
+    padding-right: 4px;
+    padding-left: 2px;
+  }
+  .header .actions-select-wrap .user-wrap .btn {
+    width: 24px;
+    height: 32px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0;
+  }
+  .header .actions-select-wrap .user-wrap .btn .button-title {
+    display: none;
+  }
+  .header .actions-select-wrap .buttons-wrap {
+    height: 32px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .header .actions-select-wrap .btn {
     width: 44px;
@@ -4867,6 +4943,7 @@ a.elm-info-ico:hover:before {
   overflow: hidden;
   border-radius: 25px;
   height: 500px;
+  background: var(--clr-bg-light);
 }
 .info-contacts-box .section-title {
   margin: 0;
@@ -5081,6 +5158,7 @@ a.elm-info-ico:hover:before {
   position: relative;
   overflow: hidden;
   z-index: 3;
+  background: var(--clr-bg-light);
 }
 .map-box .actions-inner-wrap {
   position: absolute;
